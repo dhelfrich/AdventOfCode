@@ -27,6 +27,7 @@ dependencies:
 - regex-posix
 - regex-tdfa
 - vector
+- containers
 
 ghc-options:
 - -Wall

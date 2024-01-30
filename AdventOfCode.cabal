@@ -31,6 +31,9 @@ library
       Day04
       Day05
       Day06
+      Day07
+      Day08
+      Day09
       Lib
   other-modules:
       Paths_AdventOfCode
@@ -42,6 +45,7 @@ library
   build-depends:
       base >=4.7 && <5
     , bytestring
+    , containers
     , cryptonite
     , regex-posix
     , regex-tdfa
@@ -62,6 +66,7 @@ executable AdventOfCode-exe
       AdventOfCode
     , base >=4.7 && <5
     , bytestring
+    , containers
     , cryptonite
     , regex-posix
     , regex-tdfa
@@ -83,6 +88,7 @@ test-suite AdventOfCode-test
       AdventOfCode
     , base >=4.7 && <5
     , bytestring
+    , containers
     , cryptonite
     , regex-posix
     , regex-tdfa
