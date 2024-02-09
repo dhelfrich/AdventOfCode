@@ -5,7 +5,7 @@ module Main (main) where
 -- import Day03 (day03)
 -- import Day04 (day04)
 -- import Day05 (day05)
-import Day09 (day09)
+import Day12 (day12)
 
 main :: IO ()
-main = day09
+main = day12

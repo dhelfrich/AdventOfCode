@@ -28,6 +28,9 @@ dependencies:
 - regex-tdfa
 - vector
 - containers
+- megaparsec
+- scientific
+- text
 
 ghc-options:
 - -Wall

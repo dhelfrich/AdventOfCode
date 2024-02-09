@@ -50,6 +50,16 @@
   (major1) == 0 && (major2) <  30 || \
   (major1) == 0 && (major2) == 30 && (minor) <= 0)
 #endif /* MIN_VERSION_cryptonite */
+/* package megaparsec-9.6.1 */
+#ifndef VERSION_megaparsec
+#define VERSION_megaparsec "9.6.1"
+#endif /* VERSION_megaparsec */
+#ifndef MIN_VERSION_megaparsec
+#define MIN_VERSION_megaparsec(major1,major2,minor) (\
+  (major1) <  9 || \
+  (major1) == 9 && (major2) <  6 || \
+  (major1) == 9 && (major2) == 6 && (minor) <= 1)
+#endif /* MIN_VERSION_megaparsec */
 /* package regex-posix-0.96.0.1 */
 #ifndef VERSION_regex_posix
 #define VERSION_regex_posix "0.96.0.1"
@@ -70,6 +80,16 @@
   (major1) == 1 && (major2) <  3 || \
   (major1) == 1 && (major2) == 3 && (minor) <= 2)
 #endif /* MIN_VERSION_regex_tdfa */
+/* package scientific-0.3.7.0 */
+#ifndef VERSION_scientific
+#define VERSION_scientific "0.3.7.0"
+#endif /* VERSION_scientific */
+#ifndef MIN_VERSION_scientific
+#define MIN_VERSION_scientific(major1,major2,minor) (\
+  (major1) <  0 || \
+  (major1) == 0 && (major2) <  3 || \
+  (major1) == 0 && (major2) == 3 && (minor) <= 7)
+#endif /* MIN_VERSION_scientific */
 /* package split-0.2.5 */
 #ifndef VERSION_split
 #define VERSION_split "0.2.5"
@@ -80,6 +100,16 @@
   (major1) == 0 && (major2) <  2 || \
   (major1) == 0 && (major2) == 2 && (minor) <= 5)
 #endif /* MIN_VERSION_split */
+/* package text-2.0.2 */
+#ifndef VERSION_text
+#define VERSION_text "2.0.2"
+#endif /* VERSION_text */
+#ifndef MIN_VERSION_text
+#define MIN_VERSION_text(major1,major2,minor) (\
+  (major1) <  2 || \
+  (major1) == 2 && (major2) <  0 || \
+  (major1) == 2 && (major2) == 0 && (minor) <= 2)
+#endif /* MIN_VERSION_text */
 /* package vector-0.13.1.0 */
 #ifndef VERSION_vector
 #define VERSION_vector "0.13.1.0"

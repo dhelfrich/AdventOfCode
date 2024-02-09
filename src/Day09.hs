@@ -1,9 +1,8 @@
 module Day09 (day09) where
-import Text.Regex.TDFA
+import Text.Regex.TDFA ( (=~) )
 import qualified Data.Map as M
 import Data.Maybe (mapMaybe)
 import Data.List (nub, permutations)
-import GHC.Base (VecElem(Int16ElemRep))
 type DistsMap = M.Map (String, String) Int
 
 day09 :: IO ()
