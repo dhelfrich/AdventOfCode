@@ -31,6 +31,7 @@ dependencies:
 - megaparsec
 - scientific
 - text
+- ghc
 
 ghc-options:
 - -Wall

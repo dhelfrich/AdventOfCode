@@ -20,9 +20,9 @@ computeDifference str =
     chars = str =~ "\\\\x[0-9a-f]{2}"
   -- let pat = "(\\\")|(\\\\)|(\\x[0-9a-f]{2})"
 
-matchMake :: String -> ([[String]], [[String]], [[String]])
-matchMake str = (backslashes, chars, quotes)
-  where
-    backslashes = str =~ "\\\\\\\\"
-    chars = str =~ "(\\\\x[0-9a-f]{2})"
-    quotes = str =~ "\\\""
+-- matchMake :: String -> ([[String]], [[String]], [[String]])
+-- matchMake str = (backslashes, chars, quotes)
+--   where
+--     backslashes = str =~ "\\\\\\\\"
+--     chars = str =~ "(\\\\x[0-9a-f]{2})"
+--     quotes = str =~ "\\\""

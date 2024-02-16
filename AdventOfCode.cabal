@@ -37,6 +37,13 @@ library
       Day10
       Day11
       Day12
+      Day13
+      Day14
+      Day15
+      Day16
+      Day17
+      Day18
+      Day19
       Lib
       SExp
   other-modules:
@@ -51,6 +58,7 @@ library
     , bytestring
     , containers
     , cryptonite
+    , ghc
     , megaparsec
     , regex-posix
     , regex-tdfa
@@ -75,6 +83,7 @@ executable AdventOfCode-exe
     , bytestring
     , containers
     , cryptonite
+    , ghc
     , megaparsec
     , regex-posix
     , regex-tdfa
@@ -88,6 +97,7 @@ test-suite AdventOfCode-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Main
       Paths_AdventOfCode
   autogen-modules:
       Paths_AdventOfCode
@@ -100,6 +110,7 @@ test-suite AdventOfCode-test
     , bytestring
     , containers
     , cryptonite
+    , ghc
     , megaparsec
     , regex-posix
     , regex-tdfa

@@ -3,3 +3,10 @@
 2024-01-26 17:58:32.024880400000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
 2024-02-06 13:08:32.795055300000 [$pid(ThreadId 4)] CRITICAL REQUEST - invalid HANDLE. eof.
 2024-02-06 13:09:18.566056200000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2024-02-10 22:18:58.924439900000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2024-02-15 08:13:15.504087700000 [$pid(ThreadId 5)] CRITICAL APP - invalid dap result from ghci. ["\"Part 1: 2024-02-15 08:13:40.077861200000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2024-02-15 08:16:41.270529500000 [$pid(ThreadId 5)] ERROR APP - already at the beginning of the history
+2024-02-15 08:16:56.613678300000 [$pid(ThreadId 5)] ERROR APP - already at the beginning of the history
+2024-02-15 08:16:59.213312900000 [$pid(ThreadId 5)] ERROR APP - already at the beginning of the history
+2024-02-15 08:17:00.298400700000 [$pid(ThreadId 5)] ERROR APP - already at the beginning of the history
+2024-02-15 08:17:48.770969600000 [$pid(ThreadId 5)] ERROR APP - already at the beginning of the history
