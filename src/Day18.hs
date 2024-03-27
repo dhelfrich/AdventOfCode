@@ -23,14 +23,14 @@ day18 = do
 next :: Int -> Grid -> Grid
 next size g = M.mapWithKey f g
   where
+  isOnNext n c = (c && (n == 2 || n == 3)) || (not c && (n == 3))
   f k current = isOnNext neighborsOn current
     where
-    isOnNext n c = (c && (n == 2 || n == 3)) || (not c && (n == 3))
     neighborsOn = count (g M.!) neighbors
     (i, j) = k
     neighbors = delete (i, j) [(i', j') | i' <- neighIs, j' <- neighJs]
-    neighIs = nub ([i] ++ [max (i - 1) 0] ++ [min (i + 1) size])
-    neighJs = nub ([j] ++ [max (j - 1) 0] ++ [min (j + 1) size])
+    neighIs = nub [i, max (i - 1) 0, min (i + 1) size]
+    neighJs = nub [j, max (j - 1) 0, min (j + 1) size]
 
 cornersOn :: Int -> Grid -> Grid
 cornersOn size = M.union cornOn
