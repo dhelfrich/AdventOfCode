@@ -25,33 +25,38 @@ source-repository head
 
 library
   exposed-modules:
-      Day01
-      Day02
-      Day03
-      Day04
-      Day05
-      Day06
-      Day07
-      Day08
-      Day09
-      Day10
-      Day11
-      Day12
-      Day13
-      Day14
-      Day15
-      Day16
-      Day17
-      Day18
-      Day19
-      Day20
-      Day21
-      Day22
-      Day23
-      Day24
       Fib
       Lib
       SExp
+      Y2015.Day01
+      Y2015.Day02
+      Y2015.Day03
+      Y2015.Day04
+      Y2015.Day05
+      Y2015.Day06
+      Y2015.Day07
+      Y2015.Day08
+      Y2015.Day09
+      Y2015.Day10
+      Y2015.Day11
+      Y2015.Day12
+      Y2015.Day13
+      Y2015.Day14
+      Y2015.Day15
+      Y2015.Day16
+      Y2015.Day17
+      Y2015.Day18
+      Y2015.Day19
+      Y2015.Day20
+      Y2015.Day21
+      Y2015.Day22
+      Y2015.Day23
+      Y2015.Day24
+      Y2015.Day25
+      Y2016.Day01
+      Y2016.Day02
+      Y2016.Day03
+      Y2016.Day04
   other-modules:
       Paths_AdventOfCode
   autogen-modules:

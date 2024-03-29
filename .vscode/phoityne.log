@@ -22,3 +22,5 @@
 2024-03-23 17:01:48.393708300000 [$pid(ThreadId 5)] ERROR APP - already at the beginning of the history
 2024-03-23 17:01:57.690554400000 [$pid(ThreadId 5)] ERROR APP - already at the beginning of the history
 2024-03-23 17:31:11.818945400000 [$pid(ThreadId 5)] ERROR APP - user error (variable id:10 not found.)
+2024-03-28 13:56:42.576189700000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"
+2024-03-28 16:37:50.083334000000 [$pid(ThreadId 5)] ERROR APP - start debugging failed. user error (ExecResult not found.) : Left "user error (ExecResult not found.)"

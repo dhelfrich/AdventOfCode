@@ -3,9 +3,10 @@ from aocd.models import Puzzle
 from aocd.utils import AOC_TZ
 from aocd.utils import blocker
 
-cookie = "53616c7465645f5f4c27a799f2ae4dc0f0ce3152ee2bd5b1caf4260ac7018b0b8412032dcf6dcd2b7e356bcceebf6a990f68e9ce120fedd2d10ff0e4fb980834"
+cookie = "53616c7465645f5fcefe56ba9d0c2c582f54fa0d8aaa0fe6786fd21de405b78ee85fbe9b63c85296778577bda20c34f6cfe3e6e59716fbeeef5266f266b68456"
 day = 10
+year = 2016
 for day in range(1,26):
-    file = open("./inputs/day{:02d}.txt".format(day),"w")
-    input = get_data(cookie, day, 2015)
+    file = open("./inputs/{}/day{:02d}.txt".format(year, day),"w")
+    input = get_data(cookie, day, year)
     file.write(input)
