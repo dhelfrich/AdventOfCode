@@ -57,6 +57,10 @@ library
       Y2016.Day02
       Y2016.Day03
       Y2016.Day04
+      Y2016.Day05
+      Y2016.Day06
+      Y2016.Day07
+      Y2016.Day08
   other-modules:
       Paths_AdventOfCode
   autogen-modules:

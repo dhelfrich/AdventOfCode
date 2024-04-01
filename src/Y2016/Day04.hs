@@ -24,7 +24,6 @@ day04 = do
           p2 = decrypt <$> fRooms
       print $ "Part 1: " ++ show p1
       putStrLn "Part 2: "
-      mapM_ print fRooms 
       mapM_ print p2
 
 isReal :: Room -> Bool
