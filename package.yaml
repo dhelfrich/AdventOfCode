@@ -32,6 +32,7 @@ dependencies:
 - scientific
 - text
 - ghc
+- ansi-terminal
 
 ghc-options:
 - -Wall

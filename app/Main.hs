@@ -1,11 +1,18 @@
 module Main (main) where
+import System.IO (stdout)
+import System.Console.ANSI
 
--- import Day01 (day01)
--- import Day02 (day02)
--- import Day03 (day03)
--- import Day04 (day04)
--- import Day05 (day05)
-import Y2016.Day10
+import Y2016.Day11
+
+
 
 main :: IO ()
-main = day10
+main = do
+  stdoutSupportsANSI <- hNowSupportsANSI stdout
+  if stdoutSupportsANSI
+    then do
+      setSGR [SetColor Foreground Dull Blue]
+      day11
+      setSGR [Reset]
+    else
+      putStrLn "Standard output does not support 'ANSI' escape codes."

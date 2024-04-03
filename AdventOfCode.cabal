@@ -63,6 +63,7 @@ library
       Y2016.Day08
       Y2016.Day09
       Y2016.Day10
+      Y2016.Day11
   other-modules:
       Paths_AdventOfCode
   autogen-modules:
@@ -71,7 +72,8 @@ library
       src
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
-      base >=4.7 && <5
+      ansi-terminal
+    , base >=4.7 && <5
     , bytestring
     , containers
     , cryptonite
@@ -96,6 +98,7 @@ executable AdventOfCode-exe
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       AdventOfCode
+    , ansi-terminal
     , base >=4.7 && <5
     , bytestring
     , containers
@@ -123,6 +126,7 @@ test-suite AdventOfCode-test
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints -threaded -rtsopts -with-rtsopts=-N
   build-depends:
       AdventOfCode
+    , ansi-terminal
     , base >=4.7 && <5
     , bytestring
     , containers

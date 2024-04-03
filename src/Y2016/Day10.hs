@@ -7,7 +7,6 @@ import Text.Megaparsec.Char
 import qualified Text.Megaparsec.Char.Lexer as L
 import qualified Data.Map as M
 import Data.List (sort, foldl')
-import Debug.Trace (trace)
 import Data.Maybe (mapMaybe)
 
 type Parser = Parsec Void Text
@@ -28,8 +27,12 @@ day10 = do
       let m = toMap result
           c = chipList result
           solved = foldl addLowestChip m c
-      print c
-      mapM_ print (M.toList $ (filterLogic 17 .filterLogic 61) (solved))
+          getFromOutput o = (\(_, _, x) -> x) $ solved M.! Output o
+          (p1, _) = head . M.toList . filterLogic 17 .filterLogic 61 $ solved
+          p2 = product $ (\(Chip x) -> x) . head . getFromOutput <$> [0, 1, 2]
+      print $ "Part 1: " ++ show p1
+      print $ "Part 2: " ++ show p2
+      -- mapM_ print $ M.toList solved
 
 --Works because, when sorted, it always does the L1's last.
 toMap :: [Line] -> Logic
@@ -47,22 +50,20 @@ chipList l = sort $ mapMaybe getL1 l
 
 
 addLowestChip :: Logic -> (Chip, Loc) -> Logic
-addLowestChip oldLogic (chip, Output o) =
-  M.insert (Output o) (End, End, [chip]) oldLogic
-addLowestChip oldLogic (chip, Bot b) =
-  M.insertWith combine (Bot b) (End, End, [chip]) newLogic
-  where
-  combine (_, _, newChip) (low, high, oldChips) = (low, high, newChip ++ oldChips)
-  isLowest newChip' oldChip' = null oldChip' || newChip' < minimum oldChip'
-  (low', high', oldChips') = oldLogic M.! Bot b
-  newLogic =
-    if isLowest chip oldChips' 
-    then addLowestChip oldLogic (chip, low') 
-    else addLowestChip oldLogic (chip, high')
-addLowestChip _ _ = error "Error"
+addLowestChip oldLogic (chip, loc) = case loc of
+  Output o -> M.insert (Output o) (End, End, [chip]) oldLogic
+  Bot b -> M.insert (Bot b) combined newLogic
+    where
+    newLogic = if isLowest
+      then addLowestChip oldLogic (chip, low)
+      else addLowestChip oldLogic (chip, high)
+    combined = (low, high, chip : oldChips)
+    isLowest = null oldChips || chip < minimum oldChips
+    (low, high, oldChips) = oldLogic M.! Bot b
+  End -> error "Trying to look up end"
 
 filterLogic :: Int -> Logic -> Logic
-filterLogic n = M.filter (\(_, _, l) -> Chip n `elem` l) 
+filterLogic n = M.filter (\(_, _, l) -> Chip n `elem` l)
 
 pInput :: Parser [Line]
 pInput = do

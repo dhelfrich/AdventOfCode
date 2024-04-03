@@ -1,0 +1,68 @@
+[Move {item1 = (Co,MC), item2 = Just (Ru,MC), up = True}
+,Move {item1 = (Co,MC), item2 = Just (Ru,MC), up = True}
+,Move {item1 = (Co,MC), item2 = Nothing, up = False}
+,Move {item1 = (Po,MC), item2 = Just (Co,MC), up = True}
+,Move {item1 = (Co,MC), item2 = Nothing, up = False}
+,Move {item1 = (Pr,MC), item2 = Just (Co,MC), up = True}
+,Move {item1 = (Co,MC), item2 = Nothing, up = False}
+,Move {item1 = (Co,MC), item2 = Nothing, up = False}
+,Move {item1 = (Th,MC), item2 = Just (Co,MC), up = True}
+,Move {item1 = (Co,MC), item2 = Nothing, up = False}
+,Move {item1 = (Th,GN), item2 = Just (Po,GN), up = True}
+,Move {item1 = (Po,GN), item2 = Nothing, up = False}
+,Move {item1 = (Pr,GN), item2 = Just (Po,GN), up = True}
+,Move {item1 = (Po,GN), item2 = Nothing, up = False}
+,Move {item1 = (Co,MC), item2 = Just (Co,GN), up = True}
+,Move {item1 = (Pr,GN), item2 = Nothing, up = False}
+,Move {item1 = (Pr,GN), item2 = Just (Po,GN), up = True}
+,Move {item1 = (Pr,GN), item2 = Nothing, up = False}
+,Move {item1 = (Ru,GN), item2 = Just (Pr,GN), up = True}
+,Move {item1 = (Co,MC), item2 = Nothing, up = True}
+,Move {item1 = (Po,MC), item2 = Just (Co,MC), up = False}
+,Move {item1 = (Co,MC), item2 = Nothing, up = True}
+,Move {item1 = (Pr,MC), item2 = Just (Co,MC), up = False}
+,Move {item1 = (Po,MC), item2 = Just (Co,MC), up = False}
+,Move {item1 = (Co,MC), item2 = Nothing, up = True}
+,Move {item1 = (Pr,MC), item2 = Just (Co,MC), up = False}
+,Move {item1 = (Co,MC), item2 = Nothing, up = True}
+,Move {item1 = (Th,MC), item2 = Just (Co,MC), up = False}
+,Move {item1 = (Co,MC), item2 = Nothing, up = True}
+,Move {item1 = (Th,GN), item2 = Just (Ru,GN), up = True}
+,Move {item1 = (Th,GN), item2 = Nothing, up = False}
+,Move {item1 = (Th,GN), item2 = Just (Po,GN), up = True}
+,Move {item1 = (Th,GN), item2 = Just (Po,GN), up = True}
+,Move {item1 = (Th,GN), item2 = Nothing, up = False}
+,Move {item1 = (Th,GN), item2 = Nothing, up = False}
+,Move {item1 = (Th,GN), item2 = Just (Pr,GN), up = True}
+,Move {item1 = (Th,GN), item2 = Just (Pr,GN), up = True}
+,Move {item1 = (Th,GN), item2 = Nothing, up = False}
+,Move {item1 = (Th,GN), item2 = Nothing, up = False}
+,Move {item1 = (Th,GN), item2 = Just (Co,GN), up = True}
+,Move {item1 = (Th,GN), item2 = Just (Co,GN), up = True}
+,Move {item1 = (Th,GN), item2 = Nothing, up = False}
+,Move {item1 = (Ru,GN), item2 = Just (Ru,MC), up = True}
+,Move {item1 = (Co,GN), item2 = Nothing, up = False}
+,Move {item1 = (Th,GN), item2 = Just (Co,GN), up = True}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Just (Co,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Just (Co,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Just (Po,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Just (Po,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Just (Po,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Just (Pr,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Just (Pr,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Just (Pr,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Nothing, up = False}
+,Move {item1 = (Ru,MC), item2 = Just (Th,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Just (Th,MC), up = True}
+,Move {item1 = (Ru,MC), item2 = Just (Th,MC), up = True}
+]
