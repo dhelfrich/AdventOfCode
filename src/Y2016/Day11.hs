@@ -65,6 +65,7 @@ possMoves s = do
   guard $ (elev s + (if tf then 1 else -1) `elem` [0..3])
   guard $ validState $ move s (Move (fromJust obj1) obj2 tf)
   guard $ (score (Move (fromJust obj1) obj2 tf) `elem` [-1,2])
+  guard $ (score (Move (fromJust obj1) obj2 tf) `elem` [-1,2])
   return $ Move (fromJust obj1) obj2 tf
 
 validState :: State -> Bool
@@ -91,11 +92,25 @@ move s m = State end newFs
 score :: Move -> Int
 score m = (1 + (length . maybeToList) (item2 m)) * (if up m then 1 else -1)
 
+score :: Move -> Int
+score m = (1 + (length . maybeToList) (item2 m)) * (if up m then 1 else -1)
+
 startState :: State
 startState = State 0 $ M.fromList $ zip [0..3]
                      [[(Po, GN), (Th, GN), (Th, MC), (Pr, GN)
                     , (Ru, GN), (Ru, MC), (Co, MC), (Co, GN)],
                     [(Po, MC), (Pr, MC)], [], []]
+endState :: State
+endState = State 3 $ M.fromList $ zip [0..3]
+                     [[],[],[]
+                     ,[(Po, GN), (Th, GN), (Th, MC), (Pr, GN)
+                     ,(Ru, GN), (Ru, MC), (Co, MC), (Co, GN)
+                     ,(Po, MC), (Pr, MC)]]
+endStateT :: State
+endStateT = State 2 $ M.fromList $ zip [0..3]
+                     [[(Po, GN), (Th, GN), (Pr, GN)
+                    , (Ru, GN), (Ru, MC), (Co, GN)],
+                    [(Po, MC), (Pr, MC)], [(Co, MC), (Th, MC)], []]
 endState :: State
 endState = State 3 $ M.fromList $ zip [0..3]
                      [[],[],[]
